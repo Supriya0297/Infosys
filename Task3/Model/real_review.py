@@ -33,7 +33,7 @@ def send_email_to_manager(review, guest_name):
     msg["To"] = manager_email
     
     with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
-        server.login("abc@gmail.com", "abc")
+        server.login("abc@gmail.com", "password")
         server.sendmail("myemail@gmail.com", manager_email, msg.as_string())
 
 def save_review_to_mongodb(review_id, customer_id, review, rating, sentiment):
