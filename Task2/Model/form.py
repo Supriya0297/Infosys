@@ -64,6 +64,7 @@ def send_coupon_email(name, email, customer_id, coupon_code, preferred_cuisine, 
     **Hotel Dining Team**
     """
 
+
     msg = EmailMessage()
     msg.set_content(body)
     msg["Subject"] = subject
@@ -71,6 +72,8 @@ def send_coupon_email(name, email, customer_id, coupon_code, preferred_cuisine, 
     msg["To"] = receiver_email
 
     try:
+
+
         # Secure SSL context
         context = ssl.create_default_context()
         
