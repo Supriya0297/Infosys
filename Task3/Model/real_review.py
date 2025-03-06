@@ -38,8 +38,8 @@ def send_email_to_manager(review, guest_name):
 
 def save_review_to_mongodb(review_id, customer_id, review, rating, sentiment):
     client = MongoClient("mongdb_connection_string")
-    db = client["hotel_reviews"]
-    collection = db["reviews"]
+    db = client["reviews"]
+    collection = db["reviews_data"]
     review_data = {
         "review_id": review_id,
         "customer_id": customer_id,
