@@ -26,28 +26,6 @@ This project aims to revolutionize the hospitality industry by using **Large Lan
 4. Generate personalized recommendations based on historical patterns.
 5. Trigger real-time alerts for service improvement based on sentiment.
 
-## 📈 Installation & Setup
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Supriya0297/Infosys.git
-   ```
-
-2. Set up the backend environment:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   pip install -r requirements.txt
-   ```
-
-3. Configure the database (MongoDB):
-   Ensure you have MongoDB installed and update `.env` with your database credentials.
-
-4. Run the backend and Streamlit app:
-   ```bash
-   streamlit run app.py
-   ```
-
 ## 📚 Usage
 
 - Access the guest feedback dashboard via the Streamlit interface.
